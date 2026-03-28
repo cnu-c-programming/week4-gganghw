@@ -30,6 +30,6 @@ int main(){
 
     printf("sum: %d\n", sum(arr, n));
     printf("avg: %.2f\n", average(arr, n));
-    printf("sum: %d\n", max(arr, n));
+    printf("max: %d\n", max(arr, n));
     return 0;
 }
