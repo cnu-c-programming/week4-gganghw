@@ -15,7 +15,13 @@ int main() {
     printf("c: %s\n", c);
     
     printf("strcmp(%s, %s) = %d\n", a, a, strcmp(a, a));
-    printf("strcmp(%s, %s) = %d\n", a, b, strcmp(a, b)+46);
+    int result = strcmp(a, b);
+    if(result < 0){
+        result = -1;
+    }else if(result > 0){
+        result = 1;
+    }
+    printf("strcmp(%s, %s) = %d\n", a, b, result);
 
     return 0;
 }
